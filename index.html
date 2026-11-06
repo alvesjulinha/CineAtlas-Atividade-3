@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<!-- 
+    Integrantes:
+    Julia Alves Barroso
+    
+ -->
+<html lang="pt=br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CineAtlas</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Cinzel -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
+    <!-- Lato -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header class="cabecalho cabecalho-index">
+        <!-- Vai ter uma imagem de fundo aqui -->
+        <h1>CineAtlas</h1>
+    </header>
+
+    <!-- Menu de navegação -->
+    <div class="menu">
+        <nav>
+            <a href="index.html">Início</a>
+
+            <details class="menu-generos">
+                <summary>Gêneros</summary>
+                <ul class="lista-generos">
+                    <li><a href="terror.html">Terror</a></li>
+                    <li><a href="comedia.html">Comédia</a></li>
+                    <li><a href="drama.html">Drama</a></li>
+                    <li><a href="acao.html">Ação</a></li>
+                    <li><a href="romance.html">Romance</a></li>
+                    <li><a href="ficcao.html">Ficção Científica</a></li>
+                </ul>
+            </details>
+
+        </nav>
+    </div>
+
+    <!-- Seção de introdução -->
+    <section class="introducao">
+        <h2>Bem-vindo ao CineAtlas!</h2>
+        <p>Descubra os melhores filmes de cada gênero.</p>
+    </section>
+
+    <!-- Catálogo -->
+    <section class="catalogo">
+
+        <div class="titulo-catalogo">
+            <h2>Explore os gêneros</h2>
+            <hr>
+        </div>
+
+        <div id="grade-generos">
+            <a href="terror.html">
+                <div class="item-catalogo" id="item-terror">
+                    <div class="texto-catalogo">
+                        <h3>Terror</h3>
+                        <p>Medo e suspense</p>
+                    </div>
+                    <span class="icone-catalogo">👻</span>
+                </div>
+            </a>
+
+            <a href="comedia.html">
+                <div class="item-catalogo" id="item-comedia">
+                    <div class="texto-catalogo">
+                        <h3>Comédia</h3>
+                        <p>Humor e diversão</p>
+                    </div>
+                    <span class="icone-catalogo">😂</span>
+                </div>
+            </a>
+
+            <a href="drama.html">
+                <div class="item-catalogo" id="item-drama">
+                    <div class="texto-catalogo">
+                        <h3>Drama</h3>
+                        <p>Histórias intensas</p>
+                    </div>
+                    <span class="icone-catalogo">🎭</span>
+                </div>
+            </a>
+
+            <a href="acao.html">
+                <div class="item-catalogo" id="item-acao">
+                    <div class="texto-catalogo">
+                        <h3>Ação</h3>
+                        <p>Adrenalina e aventura</p>
+                    </div>
+                    <span class="icone-catalogo">💥</span>
+                </div>
+            </a>
+
+            <a href="romance.html">
+                <div class="item-catalogo" id="item-romance">
+                    <div class="texto-catalogo">
+                        <h3>Romance</h3>
+                        <p>Amor e sentimentos</p>
+                    </div>
+                    <span class="icone-catalogo">💕</span>
+                </div>
+            </a>
+
+            <a href="ficcao.html">
+                <div class="item-catalogo" id="item-ficcao">
+                    <div class="texto-catalogo">
+                        <h3>Ficção Científica</h3>
+                        <p>Ciência e inovação</p>
+                    </div>
+                    <span class="icone-catalogo">💥</span>
+                </div>
+            </a>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2026 Todos os direitos reservados.</p>
+    </footer>
+</body>
+
+</html>

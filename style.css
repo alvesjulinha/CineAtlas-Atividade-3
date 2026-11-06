@@ -1,0 +1,615 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Corpo */
+
+h1,
+h2 {
+    font-family: "Cinzel", serif;
+}
+
+body {
+    background-color: #211c20;
+    color: #e8d5b5;
+}
+
+
+a {
+    text-decoration: none;
+    color: #e8d5b5;
+    font-family: "Lato", sans-serif;
+}
+
+p {
+    font-family: "Lato", sans-serif;
+}
+
+/* Cabeçalhos */
+
+
+.cabecalho {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    padding: 50px;
+    min-height: 350px;
+}
+
+
+.cabecalho-index {
+    background-image:
+        linear-gradient(to right, #211c20 5%, rgba(35, 30, 35, 0.80) 35%, rgba(35, 30, 35, 0.80) 95%),
+        url("imagens/fita.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+
+.cabecalho-terror {
+    background-image:
+        linear-gradient(to right, #211c20 5%, rgba(35, 30, 35, 0.80) 35%, rgba(35, 30, 35, 0.80) 95%), url("imagens/ghostface.jpeg");
+    background-size: cover;
+    background-position: center 15%;
+    background-repeat: no-repeat;
+    display: flex;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.cabecalho-terror h1 {
+    color: #e34350;
+}
+
+/* Comédia */
+
+.cabecalho-comedia {
+    background-image:
+        linear-gradient(to right, #211c20 5%, rgba(35, 30, 35, 0.80) 35%, rgba(35, 30, 35, 0.80) 95%),
+        url("imagens/as-branquelas.jpeg");
+    background-size: cover;
+    background-position: center 30%;
+    background-repeat: no-repeat;
+    display: flex;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.cabecalho-comedia h1 {
+    color: #f2c14e;
+}
+
+/* Drama */
+
+
+.cabecalho-drama {
+    background-image:
+        linear-gradient(to right, #211c20 5%, rgba(35, 30, 35, 0.80) 35%, rgba(35, 30, 35, 0.80) 95%),
+        url("imagens/orgulho-e-preconceito.jpeg");
+    background-size: cover;
+    background-position: center 35%;
+    background-repeat: no-repeat;
+    display: flex;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.cabecalho-drama h1 {
+    color: #b58ae0;
+}
+
+/* Ação */
+
+.cabecalho-acao {
+    background-image:
+        linear-gradient(to right, #211c20 5%, rgba(35, 30, 35, 0.80) 35%, rgba(35, 30, 35, 0.80) 95%),
+        url("imagens/velozes-e-furiosos.jpeg");
+    background-size: cover;
+    background-position: center 15%;
+    background-repeat: no-repeat;
+    display: flex;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.cabecalho-acao h1 {
+    color: #f07835;
+}
+
+/* Ficção */
+
+.cabecalho-ficcao {
+    background-image:
+        linear-gradient(to right, #211c20 5%, rgba(35, 30, 35, 0.80) 35%, rgba(35, 30, 35, 0.80) 95%),
+        url("imagens/matrix.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.cabecalho-ficcao h1 {
+    color: #40bce8;
+}
+
+/* Romance */
+
+
+.cabecalho-romance {
+    background-image:
+        linear-gradient(to right, #211c20 5%, rgba(35, 30, 35, 0.80) 35%, rgba(35, 30, 35, 0.80) 95%),
+        url("imagens/titanic.jpeg");
+    background-size: cover;
+    background-position: center 40%;
+    background-repeat: no-repeat;
+    display: flex;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.cabecalho-romance h1 {
+    color: #e77fa6;
+}
+
+
+.cabecalho h1 {
+    font-size: 50px;
+}
+
+/* Menu e lista expansível */
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+
+.menu nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.menu-generos {
+    position: relative;
+}
+
+
+.menu-generos summary {
+    font-family: "Lato", sans-serif;
+    cursor: pointer;
+    list-style: none;
+}
+
+
+.menu-generos summary::-webkit-details-marker {
+    display: none;
+}
+
+
+.menu-generos ul {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #251010;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+    list-style: none;
+    min-width: 15px;
+}
+
+
+/* Introdução */
+
+
+.introducao {
+    text-align: center;
+    padding: 20px;
+    margin: 20px;
+}
+
+/* Catálogo */
+
+hr {
+    border: 1px solid #e8d5b5;
+    margin: auto;
+    width: 20%;
+    margin-bottom: 5px;
+}
+
+.titulo-catalogo {
+    text-align: center;
+    padding: 20px;
+    margin: 10px;
+}
+
+.catalogo {
+    text-align: center;
+    padding: 40px;
+    margin: 40px;
+}
+
+
+#grade-generos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px 10px;
+    margin: 0px;
+}
+
+/* Itens do catálogo */
+
+
+.item-catalogo {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.item-catalogo {
+    background-color: #30272a;
+    color: #e8d5b5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    padding: 15px;
+}
+
+/* Terror */
+#item-terror {
+    border: solid 2px #e34350;
+}
+
+#item-terror h3,
+.terror,
+#item-terror .icone-catalogo {
+    color: #e34350;
+}
+
+.icone-catalogo {
+    font-size: 25px;
+}
+
+/* Comédia */
+#item-comedia {
+    border: solid 2px #f2c14e;
+}
+
+#item-comedia h3,
+.comedia,
+#item-comedia .icone-catalogo {
+    color: #f2c14e;
+}
+
+/* Drama */
+#item-drama {
+    border: solid 2px #b58ae0;
+}
+
+#item-drama h3,
+.drama,
+#item-drama .icone-catalogo {
+    color: #b58ae0;
+}
+
+/* Ação */
+#item-acao {
+    border: solid 2px #f07835;
+}
+
+#item-acao h3,
+.acao,
+#item-acao .icone-catalogo {
+    color: #f07835;
+}
+
+/* Romance */
+#item-romance {
+    border: solid 2px #e77fa6;
+}
+
+#item-romance h3,
+.romance,
+#item-acao .icone-catalogo {
+    color: #e77fa6;
+}
+
+/* Ficção */
+#item-ficcao {
+    border: solid 2px #40bce8;
+}
+
+#item-ficcao h3,
+.ficcao,
+#item-acao .icone-catalogo {
+    color: #40bce8;
+}
+
+/* Ação */
+#item-acao {
+    border: solid 2px #f07835;
+}
+
+#item-acao h3,
+.acao,
+#item-acao .icone-catalogo {
+    color: #f07835;
+}
+
+/* Subgêneros */
+
+.subgeneros {
+    text-align: center;
+    justify-content: center;
+    padding: 10px;
+    margin: 20px;
+}
+
+.subgeneros p {
+    padding: 10px;
+    margin: 20px;
+}
+
+.subgeneros-grade {
+    justify-content: center;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+/* Terror */
+.subgenero-item-terror {
+    font-family: "Lato", sans-serif;
+    border: solid 2px #e34350;
+    border-radius: 20px;
+    padding: 12px;
+    margin: 5px;
+    background-color: #e34350;
+    color: #fff;
+}
+
+/* Comedia */
+.subgenero-item-comedia {
+    font-family: "Lato", sans-serif;
+    border: solid 2px #f2c14e;
+    border-radius: 20px;
+    padding: 12px;
+    margin: 5px;
+    background-color: #f2c14e;
+    color: #fff;
+}
+
+/* Drama */
+.subgenero-item-drama {
+    font-family: "Lato", sans-serif;
+    border: solid 2px #b58ae0;
+    border-radius: 20px;
+    padding: 12px;
+    margin: 5px;
+    background-color: #b58ae0;
+    color: #fff;
+}
+
+/* Romance */
+.subgenero-item-romance {
+    font-family: "Lato", sans-serif;
+    border: solid 2px #e77fa6;
+    border-radius: 20px;
+    padding: 12px;
+    margin: 5px;
+    background-color: #e77fa6;
+    color: #fff;
+}
+
+/* Ficção */
+.subgenero-item-ficcao {
+    font-family: "Lato", sans-serif;
+    border: solid 2px #40bce8;
+    border-radius: 20px;
+    padding: 12px;
+    margin: 5px;
+    background-color: #40bce8;
+    color: #fff;
+}
+
+/* Ação */
+.subgenero-item-acao {
+    font-family: "Lato", sans-serif;
+    border: solid 2px #f07835;
+    border-radius: 20px;
+    padding: 12px;
+    margin: 5px;
+    background-color: #f07835;
+    color: #fff;
+}
+
+/* Origem */
+
+.origem {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 30px;
+    text-align: center;
+    background-color: #30272a;
+    border-radius: 12px;
+}
+
+.origem h2 {
+    margin-bottom: 20px;
+}
+
+.origem p {
+    max-width: 850px;
+    margin: 15px auto;
+    text-align: justify;
+}
+
+/* Rodapé */
+footer {
+    background-color: #30272a;
+    color: #e8d5b5;
+    text-align: center;
+    padding: 25px;
+    margin-top: 45px;
+    border-top: solid 2px #a87954;
+    box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.5);
+}
+
+/* Filmes */
+
+.filmes {
+    text-align: center;
+    justify-content: center;
+    padding: 10px;
+    margin: 20px;
+}
+
+.filmes-grade {
+    justify-content: center;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 30px;
+    margin-top: 25px;
+}
+
+/* Pesquisei como usar variáveis para definir as cores */
+
+/* Cards */
+
+.filmes-grade > div[class*=filme-item-] {
+     background-color: #30272a;
+    border: 2px solid var(--cor-genero);
+    border-radius: 12px;
+    padding: 15px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Cores */
+.filme-item-terror {
+    --cor-genero: #e34350;
+}
+.filme-item-comedia {
+    --cor-genero: #f2c14e;
+}
+.filme-item-drama {
+    --cor-genero: #b58ae0;
+}
+.filme-item-romance {
+    --cor-genero: #e77fa6;
+}
+.filme-item-ficcao {
+    --cor-genero: #40bce8;
+}
+.filme-item-acao {
+    --cor-genero: #f07835;
+}
+
+/* Títulos */
+
+.filmes-grade h3 {
+    color: var(--cor-genero);
+    font-family: "Cinzel", serif;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid var(--cor-genero);
+    padding-bottom: 10px;
+}
+
+/* Imagens */
+
+.filme-imagem {
+    border: 2px solid var(--cor-genero);
+    padding: 0px;
+    border-radius: 10px;
+    background-color: #211c20;
+}
+
+.filme-imagem img {
+    width: 100%;
+    height: 280px;
+    object-fit: contain;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* Tipos */
+
+.tipo {
+    color:#fff;
+    background-color: var(--cor-genero);
+    font-family: "Lato", sans-serif;
+    font-size: 15px;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid var(--cor-genero);
+    border-radius: 20px;
+    margin-top: auto;
+}
+
+/* Animação */
+
+.cabecalho {
+    position: relative;
+    overflow: hidden;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+/* .cabecalho::before e cabecalho::after criam elementos no começo e no final */
+
+.cabecalho::before,
+.cabecalho::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 50px;
+    background-color: rgba(0, 0, 0, 0.7);
+    background-image: repeating-linear-gradient(to bottom, transparent 0px, transparent 10px, #211c20, #211c20);
+    background-size: 10px 22px;
+    background-repeat: repeat-y;
+    background-position: center;
+    border: 1px solid rgba(232, 213, 181, 0.5);
+    animation: rolo-filme 1.5s linear infinite;
+}
+
+.cabecalho::before {
+    left: 0px;
+}
+
+.cabecalho::after {
+    right: 0px;
+}
+
+/* Usando keyframe */
+@keyframes rolo-filme {
+    from {
+        background-position: center 0;
+    }
+
+    to {
+        background-position: center 25px;
+    }
+}
+
+.cabecalho h1 {
+    position: relative;
+    z-index: 1;
+}
